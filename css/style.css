@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*logo*/
 
-.logo {
+/*.logo {
     
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -87,10 +87,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .logo-third {
     color: var(--white-text-color);
-}
+}*/
  
 /*page navigation*/
-.site-nav {
+/*.site-nav {
     display:flex;
     align-items: center;
     font-weight: 500;
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 }
-
+*/
 /*title section*/
 
 .idea {

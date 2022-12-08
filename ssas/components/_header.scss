@@ -4,6 +4,10 @@
     align-items: center;
     
     background-color: var(--white-text-color);
+
+    @media screen and (max-width: 1199px) {
+        display:none;
+    }
 }
 .header-border {
     border-bottom: 1px solid #ECECEC;   

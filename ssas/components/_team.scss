@@ -56,21 +56,28 @@
     border-bottom-left-radius: 4px;
     box-shadow: 0 2px rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.14), 0 1px rgba(0, 0, 0, 0.12);
 
+    @media screen and (max-width: 767px) {
+       
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+     
+      }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
        
-      flex-basis: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) /2);
    
     }
+   
 }
 
 .team__img {
 
     display:block;
-    @media  screen and (max-width: 767px) {
-        width: 450px;
-    }
-    @media  screen and (min-width: 768px)and (max-width: 1199px) {
-        width: 354px;
+
+    @media  screen and (max-width: 1199px) {
+        width: 100%;
     }
     
 }
