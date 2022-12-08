@@ -1,0 +1,15 @@
+//header
+.header {
+    display:flex;
+    align-items: center;
+    
+    background-color: var(--white-text-color);
+}
+.header-border {
+    border-bottom: 1px solid #ECECEC;   
+}
+.header-conteiner {
+    display:flex;
+    align-items: center;
+
+}

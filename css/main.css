@@ -26,6 +26,11 @@
 .job {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 767px) {
+  .job {
+    display: none;
+  }
+}
 
 .job__title {
   margin-bottom: 50px;
