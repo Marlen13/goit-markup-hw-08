@@ -6,6 +6,10 @@
 }
 
 .footer-container {
+    @media screen and (max-width: 767px) {
+        text-align: center;
+   }
+    
     @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: left;
@@ -14,11 +18,25 @@
     
 }
 
+   
 .logo-footer {
+    margin-bottom: 20px;
+
+   @media screen and (min-width: 1200px) {
     display:block;
     margin-bottom: 20px;
     margin-right: 156px;
 }
+}
+.adress-thumb {
+
+    @media screen and (max-width: 767px) {
+    
+        margin-bottom: 60px;
+       
+    }
+}
+
 .adress {
     font-style: normal;
     font-weight: 400;
@@ -38,15 +56,26 @@
     display:block;
 }
 
-.adress-item:not(:last-child) {
+.adress-item:not(:last-child)  {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+
     margin-bottom: 9px;
+
+    }
 }
 .footer-social-container {
-    margin-right: 93px;
     display:flex;
     flex-direction: column;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+   
     width: 206px;
     height: 80px;
+    }
 
 }
 .social-title {
@@ -65,7 +94,7 @@
 }
 .footer-social-link {
     display: flex;
-    justify-content: flex;
+    justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
@@ -83,9 +112,12 @@
 /* footer form*/
 
 .footer-subscribe-container {
+    width:100%;
 
-    width: 570px;
-    height: 86px;
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        height: 86px;
+}
 }
 .subscribe-title {
     margin-bottom: 20px;
@@ -98,21 +130,33 @@
 }
 
 .footer-form {
+
+    @media screen and (min-width: 1200px) {
     display:flex;
     gap: 10px;
-
+    }
 }
 
 .footer-form-field {
-    display: flex;
-    width: 358px;
-    height: 50px;
+    display:block;
+    width: 100%;
+    height: 46px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        width: 358px;
+        height: 50px;
+    }
 }
 
 .footer-form-input {
+
     padding-left: 16px;
 
     width: 100%;
+    height: 100%;
     border: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;

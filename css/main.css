@@ -436,9 +436,19 @@ h1, h2, h3, h4, h5, h6, p {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.38;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-header {
@@ -1059,6 +1069,11 @@ Animation*/
   background-color: #212121;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-container {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: -webkit-box;
@@ -1074,9 +1089,20 @@ Animation*/
 }
 
 .logo-footer {
-  display: block;
   margin-bottom: 20px;
-  margin-right: 156px;
+}
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 156px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .adress-thumb {
+    margin-bottom: 60px;
+  }
 }
 
 .adress {
@@ -1104,11 +1130,15 @@ Animation*/
 }
 
 .adress-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .adress-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-social-container {
-  margin-right: 93px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1116,8 +1146,14 @@ Animation*/
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 206px;
-  height: 80px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-social-container {
+    margin-right: 93px;
+    width: 206px;
+    height: 80px;
+  }
 }
 
 .social-title {
@@ -1148,9 +1184,9 @@ Animation*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: flex;
-      -ms-flex-pack: flex;
-          justify-content: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1170,8 +1206,13 @@ Animation*/
 
 /* footer form*/
 .footer-subscribe-container {
-  width: 570px;
-  height: 86px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-container {
+    width: 570px;
+    height: 86px;
+  }
 }
 
 .subscribe-title {
@@ -1185,24 +1226,39 @@ Animation*/
   color: var(--white-text-color);
 }
 
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .footer-form-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 358px;
-  height: 50px;
+  display: block;
+  width: 100%;
+  height: 46px;
+}
+@media screen and (max-width: 767px) {
+  .footer-form-field {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .footer-form-input {
   padding-left: 16px;
   width: 100%;
+  height: 100%;
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
