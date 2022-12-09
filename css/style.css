@@ -265,7 +265,7 @@ body {
 
 /*section team*/
 
-/* section clients*/
+/* section clients
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -306,8 +306,9 @@ body {
     border-color: var(--accent-text-color);
     color:var(--accent-text-color);
 }
+*/
 
-/* footer contacts*/
+/* footer contacts
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -384,9 +385,9 @@ body {
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--accent-text-color);
-}
+}*/
 /* footer form*/
-
+/*
 .footer-subscribe-container {
 
     width: 570px;
@@ -465,6 +466,7 @@ body {
     color:var(--white-text-color);
     
 }
+*/
 /*portfolio main*/
 /*section choise*/
 .choise {
