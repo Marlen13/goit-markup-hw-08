@@ -684,6 +684,18 @@ h1, h2, h3, h4, h5, h6, p {
           transform: translateX(0);
 }
 
+/*
+  .menu-container.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 1s, visibility 0s 1s;
+}
+
+.menu-container.is-hidden {
+  transform: translate(0%, -50%) scale(0.5);
+
+}*/
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
@@ -1419,4 +1431,29 @@ Animation*/
 .clients-link:focus {
   border-color: var(--accent-text-color);
   color: var(--accent-text-color);
+}
+
+.idea {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: #212121;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/idea/idea-hero.jpeg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/idea/idea-hero.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.idea-title {
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--white-text-color);
 }/*# sourceMappingURL=main.css.map */
