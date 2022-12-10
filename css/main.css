@@ -642,7 +642,7 @@ h1, h2, h3, h4, h5, h6, p {
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -677,6 +677,11 @@ h1, h2, h3, h4, h5, h6, p {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+@media screen and (max-width: 1199px) {
+  .menu-container {
+    overflow: hidden;
+  }
 }
 
 .menu-container.is-open {
@@ -767,6 +772,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 .mobile-social__items {
   color: var(--accent-text-color);
+}
+.mobile-social__items:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .social-networks {
@@ -1441,11 +1451,17 @@ Animation*/
   padding-bottom: 200px;
   text-align: center;
   background-color: #212121;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/idea/idea-hero.jpeg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/idea/idea-hero.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/idea/imgsm@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/idea/imgsm@1x.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .idea {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/idea/imgsm@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/idea/imgsm@2x.jpg);
+  }
 }
 
 .idea-title {

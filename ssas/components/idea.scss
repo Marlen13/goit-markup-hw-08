@@ -14,19 +14,51 @@
     background-position: center;
 
     //Mobile screen
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/idea/imgsm@1x.jpg);
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/idea/imgsm@1x.jpeg);
 
     //Mobile screen retina
     @media screen and (min-device-pixel-ratio:2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/idea/imgsm@2x.jpg);
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/idea/imgsm@2x.jpeg);
+    
     }
 
+    //Tablet screen
+    @media screen and (min-width: 481px) {
+
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/idea/imgm@1x.jpeg);
+    
+    
+    //Tablet screen retina
+
+    @media screen and (min-device-pixel-ratio:2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/idea/imgm@2x.jpeg);
+    
+        }
+
+    }
+
+     //Desktop
+     @media screen and (min-width: 769px) {
+
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/idea/idea-hero.jpeg);
+        
+        
+        //Desktop screen retina
+    
+    @media screen and (min-device-pixel-ratio:2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+         ackground-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/idea/imgl@2x.jpeg);
+        
+        }
+    
+    }
 }
-
-
-
 
 .idea-title {
     
