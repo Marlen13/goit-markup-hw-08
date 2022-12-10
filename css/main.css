@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6, p {
 .job {
   padding-bottom: 94px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .job {
     display: none;
   }
@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5, h6, p {
           align-items: center;
   background-color: var(--white-text-color);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .header {
     display: none;
   }
@@ -524,6 +524,19 @@ h1, h2, h3, h4, h5, h6, p {
 .auth-nav {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .auth-nav {
+    display: block;
+    margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    -webkit-transition: color var(--hover-duration) var(--transition-function);
+    transition: color var(--hover-duration) var(--transition-function);
+  }
+}
 @media screen and (min-width: 1200px) {
   .auth-nav {
     display: -webkit-box;
@@ -532,14 +545,8 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: auto;
     padding-top: 32px;
     padding-bottom: 32px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    -webkit-transition: color var(--hover-duration) var(--transition-function);
-    transition: color var(--hover-duration) var(--transition-function);
   }
 }
 
@@ -551,12 +558,21 @@ h1, h2, h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .auth-icon {
@@ -576,8 +592,12 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 50px;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .mail {
+    margin-right: 50px;
+  }
 }
 
 .tel {
