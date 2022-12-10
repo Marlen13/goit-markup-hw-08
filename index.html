@@ -123,7 +123,11 @@
             <ul class="job__container list">
                 <li class="job__item">
                     <div class="job-thumb">  
-                    <img class="job-thumb__img" src="./images/code.jpeg" alt="code" width="370">
+                    <img class="job-thumb__img" 
+                        srcset="./images/code.jpeg 1x, .images/job/imgl@2x.jpeg 2x"
+                        src="./images/code.jpeg" 
+                        alt="code" 
+                        width="370">
 
                         <p class="job-thumb__title">Десктопні додатки</p> 
 
@@ -131,7 +135,11 @@
                 </li>
                 <li class="job__item">
                     <div class="job-thumb"> 
-                    <img class="job-thumb__img" src="./images/support.jpeg" alt="support" width="370">
+                    <img class="job-thumb__img"
+                        srcset="../images/support.jpeg 1x, .images/job/imgl@2x-1.jpeg 2x"
+                        src="./images/support.jpeg" 
+                        alt="support" 
+                        width="370">
                     
                 
                         <p class="job-thumb__title">Мобільні додатки</p> 
@@ -140,7 +148,11 @@
                 </li>
                 <li class="job__item">
                     <div class="job-thumb"> 
-                    <img class="job-thumb__img" src="./images/technology.jpeg" alt="technology" width="370">
+                    <img class="job-thumb__img" 
+                        srcset="./images/technology.jpeg 1x, .images/job/imgl@2x-2.jpeg 2x"
+                        src="./images/technology.jpeg"
+                        alt="technology"
+                        width="370">
                         
                         <p class="job-thumb__title">Дизайнерські рішення</p> 
                         
@@ -154,7 +166,23 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__container list">
                 <li class="team__list">
-                    <img class="team__img" src="./images/demiyanenko.jpeg" alt="desiner Igor Demiyanenko" width="270">
+                    <picture>
+                        <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./images/demiyanenko.jpeg 1x, ./images/team/imgl@2x.jpeg 2x"/>
+                        <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/team/imgm@1x.jpeg 1x, ./images/team/imgm@2x.jpeg 2x"/>
+                        <source 
+                            media="(min-width: 480px)" 
+                            srcset="./images/team/imgsm@1x.jpeg, ./images/team/imgsm@2x.jpeg 2x"/>
+                        <img 
+                            class="team__img" 
+                            src="./images/demiyanenko.jpeg" 
+                            alt="desiner Igor Demiyanenko" 
+                            loading="lazy"/>
+
+                    </picture>
                     <div class="team-block">
                     <h3 class="team-block__person">Ігор Дем'яненко</h3>
                     <p class="team-block__job">Product Designer</p>
@@ -192,7 +220,20 @@
                     </div>
                 </li>
                 <li class="team__list">
-                    <img class="team__img" src="./images/repina.jpeg" alt="developer Olga Repina" width="270">
+                    <picture>
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="./images/repina.jpeg 1x, ./images/team/imgl@2x-1.jpeg 2x"/>
+                        <source media="(min-width: 768px)" 
+                        srcset="./images/team/imgm@1x-1.jpeg 1x, ./images/team/imgm@2x-1.jpeg 2x"/>
+                    <source media="(min-width: 480px)" 
+                        srcset="./images/team/imgsm@1x-1.jpeg, ./images/team/imgsm@2x-1.jpeg 2x"/>
+                        <img class="team__img" 
+                        src="./images/repina.jpeg" 
+                        alt="developer Olga Repina" 
+                        loading="lazy"/>
+                    </picture>
+
                     <div class="team-block">
                     <h3 class="team-block__person">Ольга Рєпіна</h3>
                     <p class="team-block__job">Frontend Developer</p>
@@ -230,7 +271,21 @@
                     </div>
                 </li>
                 <li class="team__list">
-                    <img class="team__img" src="./images/tarasov.jpeg" alt="marketing Mukola Tarasov" width="270">
+                    <picture>
+                        <source 
+                        media="(min-width: 1200px)"  
+                        srcset="./images/tarasov.jpeg 1x, ./images/team/imgl@2x-2.jpeg 2x"/>
+                        <source 
+                        media="(min-width: 768px)" 
+                        srcset="./images/team/imgm@1x-2.jpeg 1x, ./images/team/imgm@2x-2.jpeg 2x"/>
+                        <source 
+                        media="(min-width: 480px)" 
+                        srcset="./images/team/imgsm@1x-2.jpeg 1x, ./images/team/imgsm@2x-2.jpeg 2x"/>
+                        <img class="team__img" 
+                           src="./images/tarasov.jpeg" 
+                           alt="marketing Mukola Tarasov" 
+                           loading="lazy"/>
+                    </picture>    
                     <div class="team-block">
                     <h3 class="team-block__person">Микола Тарасов</h3>
                     <p class="team-block__job">Marketing</p>
@@ -268,7 +323,21 @@
                     </div>
                 </li>
                 <li class="team__list">
-                    <img class="team__img" src="./images/ermakov.jpeg" alt="desiner Muchailo Ermakov" width="270">
+                    <picture>
+                        <source 
+                        media="(min-width: 1200px)"  
+                        srcset="./images/ermakov.jpeg 1x, ./images/team/imgl@2x-3.jpeg 2x"/>
+                        <source 
+                        media="(min-width: 768px)" 
+                        srcset="./images/team/imgm@1x-3.jpeg 1x, ./images/team/imgm@2x-3.jpeg 2x"/>
+                    <source 
+                        media="(min-width: 480px)" 
+                        srcset="./images/team/imgsm@1x-3.jpeg, ./images/team/imgsm@2x-3.jpeg 2x"/>
+                        <img class="team__img" 
+                        src="./images/ermakov.jpeg" 
+                        alt="desiner Muchailo Ermakov" 
+                        loading="lazy">
+
                     <div class="team-block">
                     <h3 class="team-block__person">Михайло Єрмаков</h3>
                     <p class="team-block__job">UI Designer</p>
