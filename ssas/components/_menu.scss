@@ -43,7 +43,7 @@
     outline: none;
   }
   
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .menu-toggle {
       display: none;
     }
@@ -55,6 +55,7 @@
   }
   
   .menu-container {
+
     display:flex;
     flex-direction: column;
 
@@ -72,6 +73,10 @@
   
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+
+    @media screen and (max-width: 1199px) {
+      overflow: hidden;
+    }
   }
   
   .menu-container.is-open {
@@ -171,6 +176,13 @@
  .mobile-social__items {
     
     color: var(--accent-text-color);
+    
+    &:not(:last-child) {
+    border-right: 1px solid rgba(33,33,33,.2);
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+
  }
 
 .social-networks {
