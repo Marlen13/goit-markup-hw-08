@@ -799,7 +799,6 @@ h1, h2, h3, h4, h5, h6, p {
 .mobile-social__items:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
-  margin-right: 10px;
 }
 
 .social-networks {
@@ -838,30 +837,28 @@ h1, h2, h3, h4, h5, h6, p {
   /*animation: slide-to-bottom 500ms easy-out 200ms 2 both;*/
 }
 
-@media screen and (min-width: 1200px) {
-  .close-modal {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    -webkit-transition: color var(--hover-duration) var(--transition-function);
-    transition: color var(--hover-duration) var(--transition-function);
-  }
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: color var(--hover-duration) var(--transition-function);
+  transition: color var(--hover-duration) var(--transition-function);
 }
 
 .close-modal:hover,
