@@ -836,6 +836,24 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 4px;
   /*animation: slide-to-bottom 500ms easy-out 200ms 2 both;*/
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: -webkit-transform 700ms linear;
+    transition: -webkit-transform 700ms linear;
+    transition: transform 700ms linear;
+    transition: transform 700ms linear, -webkit-transform 700ms linear;
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--white-text-color);
+    border-radius: 4px;
+  }
+}
 
 .close-modal {
   position: absolute;
