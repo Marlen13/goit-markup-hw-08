@@ -15,19 +15,19 @@ $desktop: 1200px;
     //mobile screen
     @media  screen and (min-width: 480px) {
         
-        width: $mobile;
+        max-width: $mobile;
     }
  
     //tablet screen
     @media  screen and (min-width: 767px) {
        
-        width: $tablet;
+        max-width: $tablet;
     }
         
     //desktop
     @media  screen and (min-width: 1200px) {
         
-        width: $desktop;
+        max-width: $desktop;
     }
 
 }

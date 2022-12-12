@@ -242,28 +242,6 @@ h1, h2, h3, h4, h5, h6, p {
   fill: currentColor;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 767px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 .priority {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -912,7 +890,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .modal-form {
-  width: 448px;
+  max-width: 448px;
 }
 
 .form-field {
@@ -1273,7 +1251,7 @@ Animation*/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 216px;
+  max-width: 216px;
   height: 50px;
   border-color: #2F303A;
   border-radius: 4px;
@@ -1300,6 +1278,28 @@ Animation*/
 
 .idea-btn:hover, .idea-btn:focus {
   background-color: #188CE8;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 /* footer contacts*/
