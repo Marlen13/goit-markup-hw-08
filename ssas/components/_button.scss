@@ -1,7 +1,6 @@
 //button order
 .idea-btn {
 
-    
     display:flex;
     align-items: center;
     justify-content: center;
@@ -31,6 +30,7 @@
     font-family: inherit;
     cursor: pointer;
 }
+
 .idea-btn:hover,.idea-btn:focus {
     background-color: #188CE8;
 }

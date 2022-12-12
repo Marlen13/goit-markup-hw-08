@@ -202,6 +202,10 @@
 
     transition: background-color var(--hover-duration) var(--transition-function),
     box-shadow var(--hover-duration) var(--transition-function);
+
+    @media screen and (max-width: 1199px) {
+       margin: auto;
+    }
 }   
 
 .subscribe-btn:hover,
