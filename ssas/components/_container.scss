@@ -13,13 +13,13 @@ $desktop: 1200px;
    
 
     //mobile screen
-    @media  screen and (min-width: 480px) {
+    @media  screen and (max-width: 767px) {
         
         max-width: $mobile;
     }
  
     //tablet screen
-    @media  screen and (min-width: 767px) {
+    @media  screen and (min-width: 768px) {
        
         max-width: $tablet;
     }
