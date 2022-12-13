@@ -671,6 +671,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100vw;
   height: 100vh;
   padding-top: 48px;
+  padding-right: 84px;
   padding-bottom: 48px;
   padding-left: 40px;
   margin: 0;
@@ -769,6 +770,12 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.02em;
   -webkit-transition: color var(--hover-duration) var(--transition-function);
   transition: color var(--hover-duration) var(--transition-function);
+}
+@media screen and (max-width: 479px) {
+  .mobile-social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .mobile-social .link:hover, .mobile-social .link:focus {

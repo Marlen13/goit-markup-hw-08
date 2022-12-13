@@ -65,6 +65,7 @@
     width: 100vw;
     height: 100vh;
     padding-top: 48px;
+    padding-right: 84px;
     padding-bottom: 48px;
     padding-left: 40px;
     margin: 0;
@@ -168,6 +169,9 @@
 
     transition: color var(--hover-duration) var(--transition-function);
 
+    @media screen and (max-width: 479px) {
+      flex-wrap: wrap;
+    }
 }
 .mobile-social .link:hover, .mobile-social .link:focus {
    color: var(--accent-text-color) ;
