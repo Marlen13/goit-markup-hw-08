@@ -1,11 +1,9 @@
 .team {
 
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #F5F4FA;    
     
-    @media screen and (min-width: 480px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
     
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -30,16 +28,13 @@
 } 
 
 .team__title {
+    margin-bottom: 30px;
 
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.17;
     text-align: center;
 
-    @media screen and (min-width: 480px) {
-        margin-bottom: 30px;
-        font-size: 28px;
-        
-        }
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 50px;

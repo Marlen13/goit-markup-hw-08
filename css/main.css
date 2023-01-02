@@ -95,13 +95,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #F5F4FA;
-}
-@media screen and (min-width: 480px) {
-  .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -126,15 +122,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .team__title {
+  margin-bottom: 30px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .team__title {
-    margin-bottom: 30px;
-    font-size: 28px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .team__title {
@@ -723,7 +715,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .mobile-menu {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
@@ -749,6 +741,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .mobile-thumb {
   margin-top: auto;
+  font-weight: 500;
 }
 
 .mobile-contact {
@@ -773,7 +766,6 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   gap: 10px;
   margin-top: auto;
-  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   -webkit-transition: color var(--hover-duration) var(--transition-function);
