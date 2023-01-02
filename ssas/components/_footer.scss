@@ -88,6 +88,7 @@
 }
 .social-title {
     margin-bottom: 20px;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     align-items: center;
@@ -135,7 +136,7 @@
 }
 .subscribe-title {
     margin-bottom: 20px;
-    
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     align-items: center;
@@ -195,6 +196,8 @@
     padding-left: 28px;
     width: 200px;
     height: 50px;
+    
+    font-weight: 700;
 
     background-color: var(--accent-text-color);
     border-radius: 4px;

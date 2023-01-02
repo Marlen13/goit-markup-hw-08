@@ -99,7 +99,7 @@
 }
 
 .priority__descr {
-    margin-bottom: 30px;
+    
 
     .list & {
         font-weight: 400;
@@ -107,7 +107,7 @@
         color:var(--secondary-text-color);
     }
     @media screen and (max-width: 767px) {
-        
+        margin-bottom: 30px;
         max-width: 450px;
         text-align: left;
         
